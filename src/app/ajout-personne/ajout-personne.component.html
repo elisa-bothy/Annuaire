@@ -1,11 +1,15 @@
-<form action="" method="get">
-    <fieldset>
-        <label for="name" required>Nom</label>
-        <input type="text" id="name" placeholder="Nom">
+<form #f="ngForm" (submit)="onAjoutPersonneSubmit(f)">
+    <div>
+        <label for="name" required>*Nom</label>
+        <input type="text" id="name" placeholder="Nom" name="nom" ngModel>
+    </div>
+    <div>
         <label for="prenom">Prénom</label>
-        <input type="text" id="prenom">
-        <label for="phone">Téléphone</label>
-        <input type="text" id="phone" placeholder="Téléphone">
-        <input type="submit" value="Ajouter">
-    </fieldset>
+        <input type="text" id="prenom" placeholder="Prénom" name="prenom" ngModel>
+    </div>
+    <div>
+        <label for="phone">*Téléphone</label>
+        <input type="text" id="phone" placeholder="Téléphone" name="phone" ngModel>
+    </div>
+        <button type="submit">Ajouter</button>
 </form>

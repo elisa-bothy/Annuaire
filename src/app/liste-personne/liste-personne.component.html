@@ -1,7 +1,8 @@
 <ul>
-    <li>
-        <p id="numero"></p>
-        <p id="nom-prenom"></p>
-        <p id="numero"></p>
+    <li *ngFor="let p of personnes">
+        {{p.nom}}
+        {{p.prenom}}
+        {{p.phone}}
     </li>
+    <p *ngIf="personnes.length==0">Il n'y a encore personne dans l'annuaire.</p>
 </ul>

@@ -2,6 +2,9 @@
 :root{
     --color-background :#fce5c6;
     --color-text:#4D97D4 ;
+    --liste-pers: #ae8a58;
+    --color-text-secondaire: white;
+    --color-fieldset-border : #070E77;
 }
 
 body{
@@ -9,12 +12,16 @@ body{
     font-family: sans-serif;
 }
 
-img{
-    width: 48px;
+
+header img{
+    width: 80px;
 }
 
-h1{
+header h1{
     color: var(--color-text);
 }
 
-
+header h1, header img{
+    display: inline;
+    vertical-align: middle;
+}

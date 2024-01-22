@@ -1,0 +1,10 @@
+form{
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--color-fieldset-border);
+}
+
+form div{
+    display: inline;
+    flex-wrap: wrap ;
+}
